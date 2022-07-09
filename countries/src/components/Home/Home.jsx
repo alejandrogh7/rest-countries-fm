@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { clearAll, getCountries } from "../../redux/actions/actions";
 import CountryCard from "../CountryCard/CountryCard.jsx";
+import Loading from "../Loading/Loading.jsx";
 import "./Home.css";
 
 const Home = ({ theme }) => {
@@ -30,6 +31,7 @@ const Home = ({ theme }) => {
           <SearchBar theme={theme} />
         </section>
         <section className="countries">
+          {countries.length === 0 ? <Loading theme={theme} /> : null}
           {!isLoading &&
             countries?.map((country) => {
               return (

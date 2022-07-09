@@ -6,6 +6,7 @@ import { getByName, clearAll } from "../../redux/actions/actions.js";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import { useState } from "react";
+import Loading from "../Loading/Loading.jsx";
 import "./Detail.css";
 
 const Detail = ({ theme }) => {
@@ -35,6 +36,7 @@ const Detail = ({ theme }) => {
           Back
         </button>
       </NavLink>
+      {countries.length === 0 ? <Loading theme={theme} /> : null}
       {!isLoading &&
         countries?.map((country, index) => {
           let namesC = Object.getOwnPropertyNames(country.currencies);
