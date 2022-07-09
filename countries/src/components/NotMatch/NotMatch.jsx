@@ -5,11 +5,11 @@ import { TbError404 } from "react-icons/tb";
 const NotMatch = ({ theme }) => {
   return (
     <div>
-      <div className="error" height="500px">
-        404
-      </div>
-      <NavLink to="/">
-        <button>Home</button>
+      <NavLink to="/" className={`link-${theme}-theme`}>
+        <button className={`back-${theme}-theme`}>
+          <TbError404 />
+          Home
+        </button>
       </NavLink>
     </div>
   );
