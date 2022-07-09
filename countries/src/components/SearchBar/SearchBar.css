@@ -1,0 +1,105 @@
+:root {
+  --dark-mode-elements: hsl(209, 23%, 22%);
+  --dark-mode-bg: hsl(207, 26%, 17%);
+  --light-mode-elements: #fff;
+  --light-mode-bg: hsl(0, 0%, 98%);
+}
+
+.inputs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-input-Light-theme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  padding: 5px;
+  border-radius: 5px;
+  gap: 5px;
+}
+
+.search-input-Light-theme input {
+  border: 0;
+  background-color: transparent;
+  outline: none;
+  font-size: 18px;
+}
+
+.search-input-Dark-theme {
+  background-color: var(--dark-mode-elements);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  padding: 5px;
+  border-radius: 5px;
+  gap: 5px;
+}
+
+.search-input-Dark-theme input {
+  color: white;
+  border: 0;
+  background-color: transparent;
+  outline: none;
+  font-size: 18px;
+}
+
+.select-region-Light-theme {
+  width: 300px;
+  background-color: white;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.select-region-Light-theme select {
+  padding: 5px;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.select-region-Dark-theme {
+  background-color: var(--dark-mode-elements);
+  color: white;
+  width: 300px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.select-region-Dark-theme select {
+  color: white;
+  padding: 5px;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.select-region-Dark-theme option {
+  background-color: var(--dark-mode-elements);
+  color: white;
+}
+
+.search-input-Dark-theme input::placeholder {
+  color: white;
+}
+
+@media (max-width: 720px) {
+  .inputs {
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+
+  .search-input-Light-theme {
+    margin-bottom: 20px;
+  }
+}

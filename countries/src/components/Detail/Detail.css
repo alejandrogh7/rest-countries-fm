@@ -1,0 +1,145 @@
+:root {
+  --dark-mode-elements: hsl(209, 23%, 22%);
+  --dark-mode-bg: hsl(207, 26%, 17%);
+  --light-mode-elements: #fff;
+  --light-mode-bg: hsl(0, 0%, 98%);
+}
+
+/* .country-details {
+  margin: 15px auto 0;
+  padding: 15px;
+  max-width: 1400px;
+  min-height: 100vh;
+} */
+
+.link-Light-theme {
+  text-decoration: none;
+  color: black;
+}
+
+.link-Dark-theme {
+  text-decoration: none;
+  color: white;
+}
+
+.back-Light-theme {
+  background-color: white;
+  border: 0;
+  outline: 0;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 25px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 15px;
+  border-radius: 5px;
+}
+
+.back-Dark-theme {
+  background-color: var(--dark-mode-elements);
+  color: white;
+  border: 0;
+  outline: 0;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 25px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.country-details-body {
+  margin: 15px auto 0;
+  padding: 15px;
+  max-width: 1400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.img-container {
+  flex: 0.5;
+}
+
+.img-container .image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info-Light-theme {
+  flex: 0.5;
+}
+
+.info-Dark-theme {
+  color: white;
+  flex: 0.5;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.info-Light-theme h2 {
+  margin-bottom: 15px;
+}
+
+.info-Dark-theme h2 {
+  margin-bottom: 15px;
+}
+
+.info-Light-theme .values-Light-theme {
+  color: gray;
+}
+
+.info-Dark-theme .values-Dark-theme {
+  color: lightgray;
+}
+
+.border-country-Light-theme {
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: white;
+  display: inline-block;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.border-country-Dark-theme {
+  background-color: var(--dark-mode-elements);
+  color: white;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: inline-block;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+@media (max-width: 800px) {
+  .country-details-body {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .left-info {
+    margin-bottom: 20px;
+  }
+}

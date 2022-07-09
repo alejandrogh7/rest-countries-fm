@@ -1,0 +1,19 @@
+:root {
+  --dark-mode-elements: hsl(209, 23%, 22%);
+  --dark-mode-bg: hsl(207, 26%, 17%);
+  --light-mode-elements: #fff;
+  --light-mode-bg: hsl(0, 0%, 98%);
+}
+
+.app-Dark-theme {
+  background-color: var(--dark-mode-bg);
+  color: white;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.app-body {
+  margin: 15px auto 0;
+  padding: 15px;
+  max-width: 1400px;
+}
