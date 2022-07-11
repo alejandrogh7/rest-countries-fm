@@ -116,10 +116,12 @@ const Detail = ({ theme }) => {
                     </p>
                   </div>
                 </div>
-                Border Countries:
-                <div className={`border-country-${theme}-theme`}>
-                  <p>Test</p>
-                </div>
+                {country.borders ? "border Countries:" : null}
+                {country.borders?.map((border, index) => {
+                  return <div className={`border-country-${theme}-theme`} key={index}>
+                    <p>{border}</p>
+                  </div>
+                })}
               </div>
             </div>
           );
